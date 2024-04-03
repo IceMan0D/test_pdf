@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <!-- <link href="style.css" type="text/css" rel="stylesheet" media="mpdf" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <page style="padding: 2.54cm;" size="A4"> -->
+    <!-- <div class="printPDF">
+            <button id="printButton" onclick="window.print()">กดเพื่อพิมพ์เอกสาร PDF</button>
+        </div> -->
+    <page size="A4">
+        <div class="">
+            <button id="printButton" onclick="window.print()">กดเพื่อพิมพ์เอกสาร PDF</button>
+        </div>
+        <img src="scg_icon.png" alt="scg_logo" class="scg_icon">
+        <div class="head">
+            <p class="">บริษัท ปูนซิเมนต์ไทย(ทุ่งสง)จำกัด</p>
+            <p class="">เลขที่เอกสาร 9999</p>
+        </div>
+        <h2 class="title">สรุปผลการประกวดราคา</h2>
+        <!--  -->
+        <table>
+            <div class="projectDetailSection">
+                <tr>
+                    <th colspan="5" class="leftSide projectDetail">โครงการ: งานก่อสร้างอาคารโรงงาน</th>
+                </tr>
+                <tr>
+                    <th colspan="5" class="leftSide projectDetail">สังกัด: center of excellence/ Data Driven / E2E Value
+                        Creation/ Data Driven-Ts</th>
+                </tr>
+                <tr>
+                    <th colspan="5" class="leftSide projectDetail">วันที่เพิ่มโครงการ: 2 เมษายน 2567</th>
+                </tr>
+                <tr>
+                    <th colspan="5" class="leftSide projectDetail">ราคากลางที่อนุมัติ: 200,0000 บาท/โครงการ</th>
+                </tr>
+            </div>
+            <tr class="backgroundColor">
+                <th>ชื่อบริษัท/หน่วยงาน</th>
+                <th>สถานะ</th>
+                <th>ราคาประมูล<br>(บาท/โครงการ)</th>
+                <th>ราคาใหม่<br>(บาท/โครงการ)</th>
+                <th>ราคากลางย่อย<br>(ถ้ามี)</th>
+            </tr>
+            <tr>
+                <td>โนโอชีวิล 2002 จำกัด</td>
+                <td>ชนะการประกวด</td>
+                <td>900,000</td>
+                <td>ไม่ถูกเชิญเจรจา</td>
+                <td>ไม่มีราคากลางย่อย</td>
+            </tr>
+            <tr>
+                <td>บจก.เอสโซน</td>
+                <td>แพ้การประกวด</td>
+                <td>1,100,000</td>
+                <td>ไม่ถูกเชิญเจรจา</td>
+                <td>ไม่มีราคากลางย่อย</td>
+            </tr>
+            <tr>
+                <td>พีบีอาร์ เอ็นจิเนียริ่ง แอนด์ มอนิ่ง</td>
+                <td>แพ้การประกวด</td>
+                <td>1,000,000</td>
+                <td>ไม่ถูกเชิญเจรจา</td>
+                <td>ไม่มีราคากลางย่อย</td>
+            </tr>
+            <tr>
+                <td>เอฟ ฟาวเดอร์ เอ็นจีเนียริ่ง</td>
+                <td>แพ้การประกวด</td>
+                <td>1,200,000</td>
+                <td>ไม่ถูกเชิญเจรจา</td>
+                <td>ไม่มีราคากลางย่อย</td>
+            </tr>
+            <tr>
+                <td>ไมโครซอฟเอนเทอเท็นเมน</td>
+                <td>แพ้การประกวด</td>
+                <td>1,300,000</td>
+                <td>ไม่ถูกเชิญเจรจา</td>
+                <td>ไม่มีราคากลางย่อย</td>
+            </tr>
+
+
+        </table>
+        <!-- ความเห็นของคณะกรรมการ -->
+        <table>
+            <thead>
+                <tr class="chairManCommentTitle">
+                    <th colspan="5">ความเห็นของคณะกรรมการ</th>
+                </tr>
+                <tr class="backgroundColor">
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>บทบาท</th>
+                    <th style="width: 200px;">ความคิดเห็น</th>
+                    <th style="width: 200px;">ความคิดเห็นเพิ่มเติม</th>
+                    <th>วัน/เวลาลงนาม</th>
+                </tr>
+            </thead>
+            <tr class="managePadding">
+                <td>นายนพพล เอ่งฉ้วน</td>
+                <td id="test">ประธาน</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคาเห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา
+                </td>
+                <td>2 เมษายน 2567 <br> 11:40:22</td>
+            </tr>
+            <tr>
+                <td>นายชลิต ถนอมนวล</td>
+                <td>ประธาน</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคาเห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา
+                </td>
+                <td>2 เมษายน 2567 <br> 11:40:22</td>
+            </tr>
+            <tr>
+                <td>นางปรีดา วิถีชีวิติ </td>
+                <td>ประธาน</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคาเห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา
+                </td>
+                <td>2 เมษายน 2567 <br> 11:40:22</td>
+            </tr>
+            <tr>
+                <td>นายนนทนันทร์ ศิริกานนท์</td>
+                <td>ประธาน</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคาเห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา
+                </td>
+                <td>2 เมษายน 2567 <br> 11:40:22</td>
+            </tr>
+        </table>
+        <!-- สรุปผลการประกวดราคา -->
+        <table>
+            <tr>
+                <th colspan="5" class="leftSide">สรุปผลการประกวดราคาจากคณะกรรมการ:
+                    <span>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</span>
+                </th>
+            </tr>
+            <tr class="backgroundColor">
+                <th>ครั้งที่</th>
+                <th colspan="2">สรุปความคิดเห็น</th>
+                <th>ความคิดเห็นเพิ่มเติม</th>
+                <th>วันที่/เวลาเปิดซอง<br>(ที่เลขากดสรุป)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2">เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคาเห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา
+                    เห็นควรให้ผู้เสนอราคาต่ำสุดเป็นผู้ชนะการประกวดราคา</td>
+                <td>22 มี.ค. 2567 / 17.46 น.</td>
+            </tr>
+            <tr>
+                <th colspan="5" class="leftSide">การอนุมิติประกวดราคา
+                </th>
+            </tr>
+            <tr class="backgroundColor">
+                <th colspan="2">ลงนามผู้อนุมัติ</th>
+                <th colspan="2">ชื่อและตำแหน่ง</th>
+                <th>วัน/เวลาลงนาม</th>
+            </tr>
+            <tr class="approve">
+                <td colspan="2"></td>
+                <td colspan="2"></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <footer>
+            <p>เอกสารนี้ดาวน์โหลดโดย Noppon Angchoun, 2/04/2024 10:29</p>
+        </footer>
+    </page>
+    <script>
+        // window.addEventListener('beforeprint', function () {
+        //     document.getElementById('printButton').style.display = 'none';
+        // });
+
+        // window.addEventListener('afterprint', function () {
+        //     document.getElementById('printButton').style.display = 'inline-block';
+        // });
+    </script>
+</body>
+
+
+</html>

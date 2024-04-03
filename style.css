@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sarabun", sans-serif;
+  font-size: 14px;
+}
+
+/* start A4 style */
+/* page {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  width: 21cm;
+  height: 29.7cm;
+  padding: 2cm;
+  margin: 1cm auto;
+  background: white;
+} */
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  /* padding: 2cm;
+  margin: 1cm auto; */
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+/* 
+@page {
+  size: A4;
+  margin: 0;
+} */
+
+/* new */
+@media print {
+  #printButton {
+    display: none;
+  }
+
+  body,
+  page {
+    /* margin: 0; */
+    /* padding: 0; */
+    background: white;
+    margin: 0;
+    box-shadow: 0;
+    page-break-after: always;
+  }
+
+  @page {
+    /* กำหนดขอบในการพิมพ์ */
+    /* margin-top: 1cm;
+    margin-bottom: 2cm;
+    margin-left: 1cm;
+    margin-right: 1cm; */
+    /* กำหนดส่วนบนซ้ายของหน้าให้แสดงเลขหน้า */
+    @top-right {
+      content: counter(page) " / ";
+    }
+    /* กำหนดตำแหน่งและลักษณะของเลขหน้า */
+    @top-right {
+      content: "Page " counter(page);
+    }
+  }
+}
+
+/* end A4 style */
+
+.title {
+  font-size: 22px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
+}
+
+.projectDetail {
+  background-color: #e8e8e8;
+  border: none;
+  font-size: 16px;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  /* table-layout: auto; */
+}
+
+/* body {
+  background: rgb(204, 204, 204);
+} */
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.backgroundColor {
+  background-color: #e8e8e8;
+}
+
+span {
+  color: green;
+}
+
+.scg_icon {
+  width: 100px;
+}
+
+.approve td {
+  padding: 2rem 0;
+}
+
+.chairManCommentTitle th {
+  font-size: 15px;
+}
+
+footer > p {
+  margin-top: 10px;
+}
+
+/* .wordwrap {
+  word-break: keep-all;
+} */
+
+/* .managePadding:nth-child(2) {
+  padding: 0px;
+} */
